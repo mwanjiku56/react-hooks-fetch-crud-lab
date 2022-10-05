@@ -6,7 +6,7 @@ import QuestionList from "./QuestionList";
 function App() {
   const [page, setPage] = useState("List");
 
-  return (
+  return( 
     <main>
       <AdminNavBar onChangePage={setPage} />
       {page === "Form" ? <QuestionForm /> : <QuestionList />}
